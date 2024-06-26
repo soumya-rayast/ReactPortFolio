@@ -35,7 +35,7 @@ const About = () => {
             </div>
         </div>
         <div className='flex flex-wrap justify-center items-center'>
-            <img src={profile} alt="profile" className='element object-contain p-4 w-[520px] h-[520px] '/>
+            <img src={profile} alt="profile" className='element object-contain p-4 w-[520px] h-[520px]  '/>
         </div>
     </div>
   )

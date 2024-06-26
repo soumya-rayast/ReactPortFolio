@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiOutlineMenuUnfold } from 'react-icons/ai';
+import { LuMenuSquare } from "react-icons/lu";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,12 +9,12 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed w-full top-0 bg-orange-100 bg-opacity-80">
+        <nav className="fixed w-full top-0 bg-white bg-opacity-80 shadow-xl" >
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <h1 className="text-2xl font-bold">SAM</h1>
+                <h1 className="text-2xl italic text-violet-700 ">Soumya</h1>
                 <div className="flex md:order-2">
-                    <button onClick={toggleMenu} className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden focus:ring-2 focus:ring-gray-200">
-                        <AiOutlineMenuUnfold className="text-orange-400 text-lg" />
+                    <button onClick={toggleMenu} className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-violet-600 rounded-lg md:hidden focus:ring-2 focus:ring-violet-600">
+                        <LuMenuSquare className="text-orange-400 text-lg" />
                     </button>
                 </div>
                 <div className={`w-full md:flex md:w-auto ${isOpen ? 'block' : 'hidden'} md:block`}>

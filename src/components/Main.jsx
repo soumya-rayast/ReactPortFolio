@@ -50,10 +50,10 @@ const Main = () => {
         },
         particles: {
             color: {
-                value: "#ea580c",
+                value: "#4b0082",
             },
             links: {
-                color: "#ea580c",
+                color: "#4b0082",
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
