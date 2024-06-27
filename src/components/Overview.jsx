@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import "./Style.css"
 const Overview = () => {
     return (
-        <div>
+        <div className='flex flex-col items-center'>
             <div className='flex-row items-center pl-5 justify-center pt-3' id='overview'>
                 <span className={Styles.sectionHeadText}>
                     About me

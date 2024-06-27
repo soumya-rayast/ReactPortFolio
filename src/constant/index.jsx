@@ -60,9 +60,13 @@ const tech = [
         name: "Mongo DB",
         icons: mongo
     },
+    {
+        name:"Vs Code",
+        icons:vscode
+    }
 ]
 
-const project = [
+const projects = [
     {
         name: "Coinwave",
         description: "rfhjwkelr",
@@ -105,6 +109,69 @@ const project = [
         source_code_link:"dasfadf",
         source_deploy_link:"deqw"
     },
+    {
+        name: "Coinwave",
+        description: "rfhjwkelr",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: web,
+        source_code_link:"dasfadf",
+        source_deploy_link:"deqw"
+    },
+    {
+        name: "Coinwave",
+        description: "rfhjwkelr",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: web,
+        source_code_link:"dasfadf",
+        source_deploy_link:"deqw"
+    },
+    {
+        name: "Coinwave",
+        description: "rfhjwkelr",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: web,
+        source_code_link:"dasfadf",
+        source_deploy_link:"deqw"
+    },
 ]
 
-export {services,tech,project};
+export {services,tech,projects};

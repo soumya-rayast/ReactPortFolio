@@ -3,6 +3,7 @@ import About from './components/About';
 import Main from './components/Main';
 import Navbar from './components/Navbar';
 import Overview from './components/Overview';
+import Project from './components/Project';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </div>
       <div className='flex flex-col relative bg-white'>
         <Overview/>
+      </div>
+      <div className='flex flex-col relative bg-white'>
+        <Project/>
       </div>
     </div>
   );
