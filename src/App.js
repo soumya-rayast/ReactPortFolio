@@ -1,5 +1,7 @@
 import './App.css';
 import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Main from './components/Main';
 import Navbar from './components/Navbar';
 import Overview from './components/Overview';
@@ -19,11 +21,17 @@ function App() {
           <About/>
         </div>
       </div>
-      <div className='flex flex-col relative bg-white'>
+      <div className='flex flex-col relative  bg-white'>
         <Overview/>
       </div>
-      <div className='flex flex-col relative bg-white'>
+      <div className='flex flex-col relative  bg-white'>
         <Project/>
+      </div>
+      <div className='flex flex-col relative bg-white'>
+        <Contact/>
+      </div>
+      <div>
+      <Footer/>
       </div>
     </div>
   );
