@@ -1,5 +1,5 @@
 import React from 'react'
-import { GrLinkedinOption } from 'react-icons/gr'
+import { GrGithub, GrLinkedinOption, GrMail, GrPhone } from 'react-icons/gr'
 
 const Footer = () => {
   return (
@@ -15,26 +15,26 @@ const Footer = () => {
             </a>
             <a href="/" target='blank' className='text-lg flex flex-row text-violet-300'>
                 <div className='h-[30px] w-[30px] rounded-full flex justify-center items-center bg-violet-400'>
-                    <GrLinkedinOption className='text-white'/>
+                    <GrGithub className='text-white'/>
                 </div>
                 <span className='text-white ml-1 mt-[0.1rem]'>
-                    Soumya Rayast
+                    soumya-rayast
                 </span>
             </a>
             <a href="/" target='blank' className='text-lg flex flex-row text-violet-300'>
                 <div className='h-[30px] w-[30px] rounded-full flex justify-center items-center bg-violet-400'>
-                    <GrLinkedinOption className='text-white'/>
+                    <GrPhone className='text-white'/>
                 </div>
                 <span className='text-white ml-1 mt-[0.1rem]'>
-                    Soumya Rayast
+                    7909812591
                 </span>
             </a>
             <a href="/" target='blank' className='text-lg flex flex-row text-violet-300'>
                 <div className='h-[30px] w-[30px] rounded-full flex justify-center items-center bg-violet-400'>
-                    <GrLinkedinOption className='text-white'/>
+                    <GrMail className='text-white'/>
                 </div>
                 <span className='text-white ml-1 mt-[0.1rem]'>
-                    Soumya Rayast
+                    rayastsoumya@gmail.com
                 </span>
             </a>
         </div>

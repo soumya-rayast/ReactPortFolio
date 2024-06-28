@@ -14,6 +14,11 @@ import tail from  "../assets/TailwindCSS.png";
 import vercel from "../assets/vercel.png";
 import html from "../assets/html.png";
 import express from "../assets/express.png"
+import todolist from "../assets/Project/todolist.jpg";
+import coinwave from "../assets/Project/coinwave.jpg";
+import gemini from "../assets/Project/gemini.jpg";
+import netlify from "../assets/netlify.png";
+import postman from "../assets/postman.png"
 // for services 
 const services = [
     {
@@ -80,15 +85,86 @@ const tech = [
         icons:vscode
     },
     {
+        name:"Postman",
+        icons: postman,
+    },
+    {
         name:"Vercel",
         icons:vercel,
+    },
+    {
+        name:"Netlify",
+        icons:netlify
     }
 ]
 
 const projects = [
     {
-        name: "Coinwave",
-        description: "rfhjwkelr",
+        name: "To-Do List",
+        description: "Implemented dynamic task addition, completion tracking with checkboxes, and task removal functionality. Utilized CSS media queries to adapt the layout for various screen sizes, enhancing accessibility. ",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: todolist,
+        source_code_link:"https://github.com/soumya-rayast/To-Do-List",
+        source_deploy_link:"https://melodic-sprite-bed2f2.netlify.app/"
+    },
+    {
+        name: "CoinWave-Crypto",
+        description: "Developed a Responsive Crypto Information Website: Utilized React.js to create a user-friendly and dynamic interface that displays up-to-date cryptocurrency information, integrating with external APIs for real-time data.",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: coinwave,
+        source_code_link:"https://github.com/soumya-rayast/CoinWave",
+        source_deploy_link:"https://coinwavecrypto.netlify.app/"
+    },
+    {
+        name: "Google Gemini Clone",
+        description: "Created a responsive Google Clone using React.js, CSS, and the Gemini API, enabling new chats and data storage. Implemented real-time search results and persistent chat history for seamless cross-device functionality.",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: gemini,
+        source_code_link:"https://github.com/soumya-rayast/Gemini-Clone",
+        source_deploy_link:"https://main--geminicloned.netlify.app/"
+    },
+    {
+        name: "Photo Stream ",
+        description: "Developed PhotoStream with React and Firebase v10, featuring real-time CRUD operations, Firebase Authentication, and Firebase Storage for secure and efficient photo management.",
         tags: [
             {
                 name: "Reactjs",
@@ -104,75 +180,12 @@ const projects = [
             },
         ],
         img: web,
-        source_code_link:"dasfadf",
-        source_deploy_link:"deqw"
+        source_code_link:"https://github.com/soumya-rayast/React-Firebase-WebApp",
+        source_deploy_link:"https://react-firebase-web-app.vercel.app/"
     },
     {
-        name: "Coinwave",
-        description: "rfhjwkelr",
-        tags: [
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-        ],
-        img: web,
-        source_code_link:"dasfadf",
-        source_deploy_link:"deqw"
-    },
-    {
-        name: "Coinwave",
-        description: "rfhjwkelr",
-        tags: [
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-        ],
-        img: web,
-        source_code_link:"dasfadf",
-        source_deploy_link:"deqw"
-    },
-    {
-        name: "Coinwave",
-        description: "rfhjwkelr",
-        tags: [
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-        ],
-        img: web,
-        source_code_link:"dasfadf",
-        source_deploy_link:"deqw"
-    },
-    {
-        name: "Coinwave",
-        description: "rfhjwkelr",
+        name: "Task Management Application",
+        description: "Developed a task management web app using the MERN stack, featuring full CRUD functionality. Enabled users to create, read, update, and delete tasks seamlessly.",
         tags: [
             {
                 name: "Reactjs",
