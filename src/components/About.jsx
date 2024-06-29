@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from "../assets/profile1.jpg";
+import profile from "../assets/overview.jpg";
 import {Styles} from "../utils/Style"
 import Resume from "../assets/Resume_SoumyaRayast.pdf";
 import { FaDownload } from "react-icons/fa6";
@@ -10,7 +10,7 @@ const About = () => {
         <div className='flex-1 py-4'>
             <span className={Styles.heroHeadText}>
                 Hi,I'm 
-                <span className='text-orange-600'>
+                <span className='text-black'>
                 Soumya Rayast
                 </span>
                 <br />
@@ -28,8 +28,8 @@ const About = () => {
                 target='blank'
                 rel="noreferrer"
                 >
-                    <div className='p-4 mt-2 w-[13rem] rounded-xl text-orange-500 flex justify-center border-2 border-orange-500 hover:border-violet-500 hover:shadow-pink-500'>
-                    <FaDownload className='text-lg mr-3 mt-1 text-orange-500'/> Resume
+                    <div className='p-4 mt-2 w-[13rem] rounded-xl text-green-600 flex justify-center border-2 border-green-800 hover:border-black hover:shadow-green-800 hover:bg-green-200 hover:text-black'>
+                    <FaDownload className='text-lg mr-3 mt-1 text-green-500 hover:text-black '/> Resume
                     </div>
                 </a>
             </div>
