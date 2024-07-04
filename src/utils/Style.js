@@ -8,6 +8,6 @@ const Styles = {
     sectionSubText:
         "sm:text-[18px] text-violet-600 text-[14px] uppercase tracking-wider",
     sectionText:
-        "mt-4  text-black text-[17px] leading-[30px] max-w-3xl"
+        " text-black text-[17px] leading-[30px] max-w-2xl"
 };
 export { Styles };

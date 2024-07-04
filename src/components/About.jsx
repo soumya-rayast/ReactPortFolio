@@ -6,8 +6,8 @@ import { FaDownload } from "react-icons/fa6";
 import "../App.css"
 const About = () => {
   return (
-    <div className='flex flex-wrap justify-center items-center mt-10 p-10' id='Home'>
-        <div className='flex-1 py-4'>
+    <div className='flex flex-wrap justify-center items-center mt-10 p-10' id='home'>
+        <div className='flex-1 py-4 ml-10 '>
             <span className={Styles.heroHeadText}>
                 Hi,I'm 
                 <span className='text-black'>

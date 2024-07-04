@@ -6,6 +6,7 @@ import Main from './components/Main';
 import Navbar from './components/Navbar';
 import Overview from './components/Overview';
 import Project from './components/Project';
+import Skill from './components/Skill';
 // import {Link} from "react-router-dom"
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
       </div>
       <div className='flex flex-col relative  bg-white'>
         <Overview/>
+      </div>
+      <div className='flex flex-col relative  bg-white'>
+        <Skill/>
       </div>
       <div className='flex flex-col relative  bg-white'>
         <Project/>
