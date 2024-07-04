@@ -27,7 +27,7 @@ const Contact = () => {
 
     return (
         <div>
-            <div className='flex flex-row items-center pl-5 justify-center pt-3' id='contact'>
+            <div className='flex flex-row items-center lg:pl-5  justify-center pt-3' id='contact'>
                 <span className={Styles.sectionHeadText}>
                     Contact
                 </span>

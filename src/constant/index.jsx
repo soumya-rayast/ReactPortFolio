@@ -19,6 +19,7 @@ import coinwave from "../assets/Project/coinwave.jpg";
 import gemini from "../assets/Project/gemini.jpg";
 import netlify from "../assets/netlify.png";
 import postman from "../assets/postman.png"
+import as from "../assets/as.png";
 // for services 
 const services = [
     {
@@ -179,7 +180,7 @@ const projects = [
                 color: "blue-text-gradient"
             },
         ],
-        img: web,
+        img: as,
         source_code_link:"https://github.com/soumya-rayast/React-Firebase-WebApp",
         source_deploy_link:"https://react-firebase-web-app.vercel.app/"
     },
@@ -200,7 +201,28 @@ const projects = [
                 color: "blue-text-gradient"
             },
         ],
-        img: web,
+        img: as,
+        source_code_link:"dasfadf",
+        source_deploy_link:"deqw"
+    },
+    {
+        name: "BlogNest",
+        description: "Developed a MERN stack blog website with full CRUD functionality, a comment section, login/sign-up components, and secure user authentication.",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: as,
         source_code_link:"dasfadf",
         source_deploy_link:"deqw"
     },

@@ -13,7 +13,7 @@ const Overview = () => {
     return (
         <div className='flex flex-col items-center'>
             <div className='flex flex-col md:flex-row items-center justify-center pt-3 w-full ' id='about'>
-                <div className='flex flex-col items-start w-1/2 lg:pl-5'>
+                <div className='flex flex-col items-start w-1/2 lg:pl-5 pl-4 '>
                     <span className={Styles.sectionHeadText}>
                         About me
                     </span>
@@ -43,7 +43,7 @@ const Overview = () => {
             </div>
 
             {/* For services */}
-            <div className='flex flex-col lg:flex-row items-center pl-5 justify-center pt-3' >
+            <div className='flex flex-col lg:flex-row items-center lg:pl-5 md:pr-8 justify-center lg:pt-3' >
                 <span className={Styles.sectionHeadText}>
                     My Services
                 </span>

@@ -1,14 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect,useRef } from 'react';
 import { LuMenuSquare } from "react-icons/lu";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const menRef = useRef(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    const handleClickOutside = (event) =>{
+        if(menRef.current && !menRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+    }
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutside);
+        return () =>{
+            document.removeEventListener("click", handleClickOutside);
+        }
+    })
     return (
-        <nav className="fixed w-full top-0 bg-white bg-opacity-80 shadow-xl" >
+        <nav className="fixed w-full top-0 bg-white bg-opacity-80 shadow-xl" ref={menRef} >
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <h1 className="text-2xl italic text-green-800 cursor-pointer font-bold">Soumya</h1>
                 <div className="flex md:order-2">

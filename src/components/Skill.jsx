@@ -3,9 +3,9 @@ import { tech} from '../constant';
 const Skill = () => {
   return (
     <div id='skill' className='lg:mt-20'>
-      <div className='flex flex-col lg:flex-row items-center pl-5 justify-center pt-3' >
+      <div className='flex flex-col lg:flex-row items-center lg:pl-5 justify-center pt-3' >
                 <span className={Styles.sectionHeadText}>
-                    Tool And Tech
+                    Tool's And Tech
                 </span>       
         </div>
         <div className='flex flex-col items-center'>
