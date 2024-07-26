@@ -20,6 +20,7 @@ import gemini from "../assets/Project/gemini.jpg";
 import netlify from "../assets/netlify.png";
 import postman from "../assets/postman.png"
 import as from "../assets/as.png";
+import chattext from "../assets/Project/cahtext.jpg"
 // for services 
 const services = [
     {
@@ -164,25 +165,25 @@ const projects = [
         source_deploy_link:"https://main--geminicloned.netlify.app/"
     },
     {
-        name: "Photo Stream ",
-        description: "Developed PhotoStream with React and Firebase v10, featuring real-time CRUD operations, Firebase Authentication, and Firebase Storage for secure and efficient photo management.",
+        name: "ChatText",
+        description: "A real-time chat application built using React.js, Socket.io, and Node.js.",
         tags: [
             {
                 name: "Reactjs",
                 color: "blue-text-gradient"
             },
             {
-                name: "Reactjs",
+                name: "Socket.io",
                 color: "blue-text-gradient"
             },
             {
-                name: "Reactjs",
+                name: "Nodejs",
                 color: "blue-text-gradient"
             },
         ],
-        img: as,
-        source_code_link:"https://github.com/soumya-rayast/React-Firebase-WebApp",
-        source_deploy_link:"https://react-firebase-web-app.vercel.app/"
+        img: chattext,
+        source_code_link:"https://github.com/soumya-rayast/ChatText?tab=readme-ov-file#a-real-time-chat-application-built-using-reactjs-socketio-and-nodejs",
+        source_deploy_link:"https://chat-text.vercel.app/"
     },
     {
         name: "Task Management Application",
