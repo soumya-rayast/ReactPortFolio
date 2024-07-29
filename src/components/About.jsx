@@ -24,7 +24,7 @@ const About = () => {
             <div className='w-[14rem]'>
                 <a
                 href={Resume}
-                download="Resume"
+                download="Resume_SoumyaRayast"
                 target='blank'
                 rel="noreferrer"
                 >

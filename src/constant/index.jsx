@@ -21,6 +21,7 @@ import netlify from "../assets/netlify.png";
 import postman from "../assets/postman.png"
 import as from "../assets/as.png";
 import chattext from "../assets/Project/cahtext.jpg"
+import track from "../assets/Project/track.png"
 // for services 
 const services = [
     {
@@ -186,6 +187,27 @@ const projects = [
         source_deploy_link:"https://chat-text.vercel.app/"
     },
     {
+        name: "TrackMyBuy",
+        description: "Expense Tracking Web Application.",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Socket.io",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Nodejs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: track,
+        source_code_link:"https://github.com/soumya-rayast/TrackMyBuy",
+        // source_deploy_link:"https://chat-text.vercel.app/"
+    },
+    {
         name: "Task Management Application",
         description: "Developed a task management web app using the MERN stack, featuring full CRUD functionality. Enabled users to create, read, update, and delete tasks seamlessly.",
         tags: [
@@ -203,8 +225,8 @@ const projects = [
             },
         ],
         img: as,
-        source_code_link:"dasfadf",
-        source_deploy_link:"deqw"
+        // source_code_link:"dasfadf",
+        // source_deploy_link:"deqw"
     },
     {
         name: "BlogNest",
@@ -224,8 +246,8 @@ const projects = [
             },
         ],
         img: as,
-        source_code_link:"dasfadf",
-        source_deploy_link:"deqw"
+        // source_code_link:"dasfadf",
+        // source_deploy_link:"deqw"
     },
 ]
 
