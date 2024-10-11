@@ -19,13 +19,15 @@ import coinwave from "../assets/Project/coinwave.jpg";
 import gemini from "../assets/Project/gemini.jpg";
 import netlify from "../assets/netlify.png";
 import postman from "../assets/postman.png"
-import as from "../assets/as.png";
+import nextjs from '../assets/nextjs-icon.png'
+import threejs from '../assets/three-js-icon.png'
 import chattext from "../assets/Project/cahtext.jpg"
 import track from "../assets/Project/track.png"
+import shutter from "../assets/Project/shutter.png"
 // for services 
 const services = [
     {
-        title: "Web Developer",
+        title: "Web Designer",
         icons: web
     },
     {
@@ -76,6 +78,14 @@ const tech = [
         icons: mongo
     },
     {
+        name:"NextJs",
+        icons:nextjs
+    },
+    {
+        name:"ThreeJs",
+        icons:threejs
+    },
+    {
         name: "Github",
         icons: github
     },
@@ -98,7 +108,8 @@ const tech = [
     {
         name:"Netlify",
         icons:netlify
-    }
+    },
+    
 ]
 
 const projects = [
@@ -143,6 +154,27 @@ const projects = [
         img: coinwave,
         source_code_link:"https://github.com/soumya-rayast/CoinWave",
         source_deploy_link:"https://coinwavecrypto.netlify.app/"
+    },
+    {
+        name: "ShutterShare",
+        description: "Shutter Share is a platform where photographers can sell their photos to a global audience.",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Socket.io",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Nodejs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: shutter,
+        source_code_link:"https://github.com/soumya-rayast/ShutterShare",
+        source_deploy_link:"https://shuttershare-frontend.onrender.com/"
     },
     {
         name: "Google Gemini Clone",
@@ -207,48 +239,28 @@ const projects = [
         source_code_link:"https://github.com/soumya-rayast/TrackMyBuy",
         // source_deploy_link:"https://chat-text.vercel.app/"
     },
-    {
-        name: "Task Management Application",
-        description: "Developed a task management web app using the MERN stack, featuring full CRUD functionality. Enabled users to create, read, update, and delete tasks seamlessly.",
-        tags: [
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-        ],
-        img: as,
-        // source_code_link:"dasfadf",
-        // source_deploy_link:"deqw"
-    },
-    {
-        name: "BlogNest",
-        description: "Developed a MERN stack blog website with full CRUD functionality, a comment section, login/sign-up components, and secure user authentication.",
-        tags: [
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-        ],
-        img: as,
-        // source_code_link:"dasfadf",
-        // source_deploy_link:"deqw"
-    },
+    // {
+    //     name: "Task Management Application",
+    //     description: "Developed a task management web app using the MERN stack, featuring full CRUD functionality. Enabled users to create, read, update, and delete tasks seamlessly.",
+    //     tags: [
+    //         {
+    //             name: "Reactjs",
+    //             color: "blue-text-gradient"
+    //         },
+    //         {
+    //             name: "Reactjs",
+    //             color: "blue-text-gradient"
+    //         },
+    //         {
+    //             name: "Reactjs",
+    //             color: "blue-text-gradient"
+    //         },
+    //     ],
+    //     img: as,
+    //     // source_code_link:"dasfadf",
+    //     // source_deploy_link:"deqw"
+    // },
+
 ]
 
 export {services,tech,projects};

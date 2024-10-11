@@ -15,8 +15,7 @@ const About = () => {
                 </span>
                 <br />
                 <span className={Styles.heroSubText}>
-                    I am a MERN Stack Developer 
-                    <br />
+                    MERN Stack Developer | 
                     Web Designer
                 </span>
             </span>
