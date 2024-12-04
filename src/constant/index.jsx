@@ -16,7 +16,7 @@ import html from "../assets/html.png";
 import express from "../assets/express.png"
 import todolist from "../assets/Project/todolist.jpg";
 import coinwave from "../assets/Project/coinwave.jpg";
-import gemini from "../assets/Project/gemini.jpg";
+import opportuNest from '../assets/Project/OpportuNest.jpg'
 import netlify from "../assets/netlify.png";
 import postman from "../assets/postman.png"
 import nextjs from '../assets/nextjs-icon.png'
@@ -24,6 +24,7 @@ import threejs from '../assets/three-js-icon.png'
 import chattext from "../assets/Project/cahtext.jpg"
 import track from "../assets/Project/track.png"
 import shutter from "../assets/Project/shutter.png"
+import threeDlandingPages from '../assets/Project/3D_landingPage.png'
 // for services 
 const services = [
     {
@@ -114,6 +115,48 @@ const tech = [
 
 const projects = [
     {
+        name: "3D Landing Page",
+        description: "Three.js Landing Page",
+        tags: [
+            {
+                name: "JavaScript",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Three.js",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "CSS",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: threeDlandingPages,
+        source_code_link:"https://github.com/soumya-rayast/ThreeJS_work/tree/main/3D_LandingPage",
+        source_deploy_link:"https://three-js-work-phi.vercel.app/"
+    },
+    // {
+    //     name: "3D Animation Car",
+    //     description: "Three.js Animation Car",
+    //     tags: [
+    //         {
+    //             name: "JavaScript",
+    //             color: "blue-text-gradient"
+    //         },
+    //         {
+    //             name: "Three.js",
+    //             color: "blue-text-gradient"
+    //         },
+    //         {
+    //             name: "CSS",
+    //             color: "blue-text-gradient"
+    //         },
+    //     ],
+    //     img: threeDlandingPages,
+    //     source_code_link:"https://github.com/soumya-rayast/ThreeJS_work/tree/main/3D_Animation_Car",
+    //     source_deploy_link:"https://three-js-work-tqfk.vercel.app/"
+    // },
+    {
         name: "To-Do List",
         description: "Implemented dynamic task addition, completion tracking with checkboxes, and task removal functionality. Utilized CSS media queries to adapt the layout for various screen sizes, enhancing accessibility. ",
         tags: [
@@ -177,25 +220,25 @@ const projects = [
         source_deploy_link:"https://shuttershare-frontend.onrender.com/"
     },
     {
-        name: "Google Gemini Clone",
-        description: "Created a responsive Google Clone using React.js, CSS, and the Gemini API, enabling new chats and data storage. Implemented real-time search results and persistent chat history for seamless cross-device functionality.",
+        name: "OpportuNest",
+        description: "Opprtunest is a job search platform connecting users to relevant opportunities with personalized recommendations and a streamlined application process for efficient career growth and recruitment.",
         tags: [
             {
                 name: "Reactjs",
                 color: "blue-text-gradient"
             },
             {
-                name: "Reactjs",
+                name: "Cloudinary",
                 color: "blue-text-gradient"
             },
             {
-                name: "Reactjs",
+                name: "Nodejs",
                 color: "blue-text-gradient"
             },
         ],
-        img: gemini,
-        source_code_link:"https://github.com/soumya-rayast/Gemini-Clone",
-        source_deploy_link:"https://main--geminicloned.netlify.app/"
+        img: opportuNest,
+        source_code_link:"https://github.com/soumya-rayast/OpportuNest",
+        source_deploy_link:"https://opportunest-1-s7oc.onrender.com/"
     },
     {
         name: "ChatText",

@@ -1,14 +1,41 @@
-.parallax-effect-glare-scale{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    margin: 40px;
-    border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(to right ,green,black) 1;
-    transform-style: preserve-3d;
-    border-radius: 50px;
+.parallax-effect-glare-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin: 40px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, green, black) 1;
+  transform-style: preserve-3d;
+  border-radius: 50px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container {
+  display: flex;
+  /* overflow-x: auto; */
+  padding: 1rem;
+  gap: 1rem;
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.project-card {
+  min-width: 300px;
+  max-width: 300px;
 }

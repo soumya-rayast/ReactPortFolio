@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from "../assets/overview.jpg";
 import {Styles} from "../utils/Style"
-import Resume from "../assets/Resume_SoumyaRayast.pdf";
+import Resume from "../assets/SoumyaRayast.pdf";
 import { FaDownload } from "react-icons/fa6";
 import "../App.css"
 const About = () => {
