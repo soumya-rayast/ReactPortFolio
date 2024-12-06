@@ -37,6 +37,9 @@ const Navbar = () => {
                             <a href="#about" className="py-2 px-4 text-green-700 hover:text-black text-xl">About</a>
                         </li>
                         <li>
+                            <a href="#experience" className="py-2 px-4 text-green-700 hover:text-black text-xl">Experience</a>
+                        </li>
+                        <li>
                             <a href="#skill" className="py-2 px-4 text-green-700 hover:text-black text-xl">Skill</a>
                         </li>
                         <li>

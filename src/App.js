@@ -1,6 +1,7 @@
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
+import Expierence from './components/Expierence';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Navbar from './components/Navbar';
@@ -13,30 +14,34 @@ function App() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       <div className="fixed w-full z-10">
-        <Navbar/>
+        <Navbar />
       </div>
       <div className='pt-16 min-h-screen'>
         <div className='relative'>
-          <Main/>
+          <Main />
         </div>
         <div className='relative'>
-          <About/>
+          <About />
         </div>
       </div>
+
       <div className='flex flex-col relative  bg-white'>
-        <Overview/>
+        <Overview />
       </div>
       <div className='flex flex-col relative  bg-white'>
-        <Skill/>
+        <Expierence />
       </div>
       <div className='flex flex-col relative  bg-white'>
-        <Project/>
+        <Skill />
+      </div>
+      <div className='flex flex-col relative  bg-white'>
+        <Project />
       </div>
       <div className='flex flex-col relative bg-white'>
-        <Contact/>
+        <Contact />
       </div>
       <div>
-      <Footer/>
+        <Footer />
       </div>
     </div>
   );
