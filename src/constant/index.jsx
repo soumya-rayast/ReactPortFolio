@@ -10,7 +10,7 @@ import web from "../assets/web-development.png";
 import mongo from "../assets/mongo.png";
 import mern from "../assets/mern.png";
 import vscode from "../assets/visual-studio-code-icon.png";
-import tail from  "../assets/TailwindCSS.png";
+import tail from "../assets/TailwindCSS.png";
 import vercel from "../assets/vercel.png";
 import html from "../assets/html.png";
 import express from "../assets/express.png"
@@ -25,6 +25,7 @@ import chattext from "../assets/Project/cahtext.jpg"
 import track from "../assets/Project/track.png"
 import shutter from "../assets/Project/shutter.png"
 import threeDlandingPages from '../assets/Project/3D_landingPage.png'
+import zentry from '../assets/Project/zentry.jpg'
 // for services 
 const services = [
     {
@@ -43,8 +44,8 @@ const services = [
 //  for tools and technology
 const tech = [
     {
-        name:"HTML",
-        icons:html
+        name: "HTML",
+        icons: html
     },
     {
         name: "CSS",
@@ -59,8 +60,8 @@ const tech = [
         icons: nodejs
     },
     {
-        name:"Expressjs",
-        icons:express
+        name: "Expressjs",
+        icons: express
     },
     {
         name: "React js",
@@ -79,12 +80,12 @@ const tech = [
         icons: mongo
     },
     {
-        name:"NextJs",
-        icons:nextjs
+        name: "NextJs",
+        icons: nextjs
     },
     {
-        name:"ThreeJs",
-        icons:threejs
+        name: "ThreeJs",
+        icons: threejs
     },
     {
         name: "Github",
@@ -95,22 +96,22 @@ const tech = [
         icons: git
     },
     {
-        name:"Vs Code",
-        icons:vscode
+        name: "Vs Code",
+        icons: vscode
     },
     {
-        name:"Postman",
+        name: "Postman",
         icons: postman,
     },
     {
-        name:"Vercel",
-        icons:vercel,
+        name: "Vercel",
+        icons: vercel,
     },
     {
-        name:"Netlify",
-        icons:netlify
+        name: "Netlify",
+        icons: netlify
     },
-    
+
 ]
 
 const projects = [
@@ -132,8 +133,29 @@ const projects = [
             },
         ],
         img: threeDlandingPages,
-        source_code_link:"https://github.com/soumya-rayast/ThreeJS_work/tree/main/3D_LandingPage",
-        source_deploy_link:"https://three-js-work-phi.vercel.app/"
+        source_code_link: "https://github.com/soumya-rayast/ThreeJS_work/tree/main/3D_LandingPage",
+        source_deploy_link: "https://three-js-work-phi.vercel.app/"
+    },
+    {
+        name: "Zentry-Metagame",
+        description: "Created a landing page using GSAP Library ,React.js and Tailwind css",
+        tags: [
+            {
+                name: "JavaScript",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Three.js",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "CSS",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: zentry,
+        source_code_link: "https://github.com/soumya-rayast/Zentry_LandingPage",
+        source_deploy_link: "https://zentry-landing-page.vercel.app"
     },
     // {
     //     name: "3D Animation Car",
@@ -156,6 +178,29 @@ const projects = [
     //     source_code_link:"https://github.com/soumya-rayast/ThreeJS_work/tree/main/3D_Animation_Car",
     //     source_deploy_link:"https://three-js-work-tqfk.vercel.app/"
     // },
+
+
+    {
+        name: "ShutterShare",
+        description: "Shutter Share is a platform where photographers can sell their photos to a global audience.",
+        tags: [
+            {
+                name: "Reactjs",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Socket.io",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Nodejs",
+                color: "blue-text-gradient"
+            },
+        ],
+        img: shutter,
+        source_code_link: "https://github.com/soumya-rayast/ShutterShare",
+        source_deploy_link: "https://shuttershare-frontend.onrender.com/"
+    },
     {
         name: "To-Do List",
         description: "Implemented dynamic task addition, completion tracking with checkboxes, and task removal functionality. Utilized CSS media queries to adapt the layout for various screen sizes, enhancing accessibility. ",
@@ -174,8 +219,8 @@ const projects = [
             },
         ],
         img: todolist,
-        source_code_link:"https://github.com/soumya-rayast/To-Do-List",
-        source_deploy_link:"https://melodic-sprite-bed2f2.netlify.app/"
+        source_code_link: "https://github.com/soumya-rayast/To-Do-List",
+        source_deploy_link: "https://melodic-sprite-bed2f2.netlify.app/"
     },
     {
         name: "CoinWave-Crypto",
@@ -195,29 +240,8 @@ const projects = [
             },
         ],
         img: coinwave,
-        source_code_link:"https://github.com/soumya-rayast/CoinWave",
-        source_deploy_link:"https://coinwavecrypto.netlify.app/"
-    },
-    {
-        name: "ShutterShare",
-        description: "Shutter Share is a platform where photographers can sell their photos to a global audience.",
-        tags: [
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Socket.io",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "Nodejs",
-                color: "blue-text-gradient"
-            },
-        ],
-        img: shutter,
-        source_code_link:"https://github.com/soumya-rayast/ShutterShare",
-        source_deploy_link:"https://shuttershare-frontend.onrender.com/"
+        source_code_link: "https://github.com/soumya-rayast/CoinWave",
+        source_deploy_link: "https://coinwavecrypto.netlify.app/"
     },
     {
         name: "OpportuNest",
@@ -237,8 +261,8 @@ const projects = [
             },
         ],
         img: opportuNest,
-        source_code_link:"https://github.com/soumya-rayast/OpportuNest",
-        source_deploy_link:"https://opportunest-1-s7oc.onrender.com/"
+        source_code_link: "https://github.com/soumya-rayast/OpportuNest",
+        source_deploy_link: "https://opportunest-1-s7oc.onrender.com/"
     },
     {
         name: "ChatText",
@@ -258,8 +282,8 @@ const projects = [
             },
         ],
         img: chattext,
-        source_code_link:"https://github.com/soumya-rayast/ChatText?tab=readme-ov-file#a-real-time-chat-application-built-using-reactjs-socketio-and-nodejs",
-        source_deploy_link:"https://chat-text.vercel.app/"
+        source_code_link: "https://github.com/soumya-rayast/ChatText?tab=readme-ov-file#a-real-time-chat-application-built-using-reactjs-socketio-and-nodejs",
+        source_deploy_link: "https://chat-text.vercel.app/"
     },
     {
         name: "TrackMyBuy",
@@ -279,7 +303,7 @@ const projects = [
             },
         ],
         img: track,
-        source_code_link:"https://github.com/soumya-rayast/TrackMyBuy",
+        source_code_link: "https://github.com/soumya-rayast/TrackMyBuy",
         // source_deploy_link:"https://chat-text.vercel.app/"
     },
     // {
@@ -306,4 +330,4 @@ const projects = [
 
 ]
 
-export {services,tech,projects};
+export { services, tech, projects };

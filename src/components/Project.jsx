@@ -53,7 +53,7 @@ const Project = () => {
             </div>
 
             {/* Projects Container */}
-            <div className='relative flex items-center justify-center mt-10 overflow-hidden'>
+            <div className='relative flex items-center justify-center mt-10  overflow-hidden'>
                 {/* Previous Button */}
                 <button
                     onClick={prevProjects}
@@ -66,7 +66,7 @@ const Project = () => {
                 </button>
 
                 {/* Projects Row */}
-                <div className='flex space-x-6'>
+                <div className='flex space-x-6 mt-10 mb-10'>
                     {projects
                         .slice(currentIndex, currentIndex + visibleProjects)
                         .map((project) => (
