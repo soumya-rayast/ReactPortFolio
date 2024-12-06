@@ -28,9 +28,9 @@ function App() {
       <div className='flex flex-col relative  bg-white'>
         <Overview />
       </div>
-      <div className='flex flex-col relative  bg-white'>
+      {/* <div className='flex flex-col relative  bg-white'>
         <Expierence />
-      </div>
+      </div> */}
       <div className='flex flex-col relative  bg-white'>
         <Skill />
       </div>
