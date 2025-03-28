@@ -9,7 +9,6 @@ import Overview from './components/Overview';
 import Project from './components/Project';
 import Skill from './components/Skill';
 // import {Link} from "react-router-dom"
-
 function App() {
   return (
     <div className="flex flex-col overflow-x-hidden">
@@ -24,13 +23,12 @@ function App() {
           <About />
         </div>
       </div>
-
       <div className='flex flex-col relative  bg-white'>
         <Overview />
       </div>
-      {/* <div className='flex flex-col relative  bg-white'>
+      <div className='flex flex-col relative  bg-white'>
         <Expierence />
-      </div> */}
+      </div>
       <div className='flex flex-col relative  bg-white'>
         <Skill />
       </div>

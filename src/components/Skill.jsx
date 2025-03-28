@@ -1,32 +1,34 @@
 import { Styles } from '../utils/Style';
-import { tech} from '../constant';
+import { tech } from '../constant';
+import Tilt from 'react-parallax-tilt';
+
 const Skill = () => {
   return (
-    <div id='skill' className='lg:mt-20'>
-      <div className='flex flex-col lg:flex-row items-center lg:pl-5 justify-center pt-3' >
-                <span className={Styles.sectionHeadText}>
-                    Tool's And Tech
-                </span>       
-        </div>
-        <div className='flex flex-col items-center'>
-                <hr className='lg:w-[35%] w-full mx-5' />
-            </div>
-        <div className='flex flex-wrap justify-center items-center'>
-                {tech.map((tech) => (
-                    <div
-                        key={tech.name}
-                        className='m-4 mt-5 h-[100px] w-[100px] rounded-3xl shadow-2xl border-[1px] border-black
-                    hover:shadow-green-300 flex flex-col justify-center items-center'
-                    >
-                        <img src={tech.icons} alt={tech.name} className='p-2 w-[60px] h-[60px] ' />
-                        <div className="flex text-green-600 justify-center mt-2">
-                            {tech.name}
-                        </div>
-                    </div>
-                ))}
-            </div>
-    </div>
-  )
-}
+    <section id='skill' className='lg:mt-20 px-6 py-8'>
+      <div className='text-center'>
+        <h2 className={`${Styles.sectionHeadText} text-green-700`}>My Tech Stack</h2>
+        <p className='text-gray-600 mt-2'>Tools & Technologies I work with</p>
+        <hr className='w-[120px] mx-auto mt-3 border-green-600' />
+      </div>
 
-export default Skill
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mt-8'>
+        {tech.map((item) => (
+          <Tilt 
+            key={item.name} 
+            className="rounded-xl transition-transform duration-300 hover:scale-105"
+            tiltMaxAngleX={15}
+            tiltMaxAngleY={15}
+            perspective={1000}
+          >
+            <div className='flex flex-col items-center justify-center p-5 h-[140px] w-[140px] bg-white/20 backdrop-blur-md border border-gray-200 rounded-xl shadow-lg hover:shadow-green-400 transition-all'>
+              <img src={item.icons} alt={item.name} className='w-[55px] h-[55px]' />
+              <p className='text-green-700 text-sm font-semibold mt-2'>{item.name}</p>
+            </div>
+          </Tilt>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Skill;

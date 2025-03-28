@@ -1,28 +1,20 @@
-import React from 'react';
-import { useCallback } from "react";
+import React, { useCallback, useMemo } from "react";
 import Particles from "react-tsparticles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "tsparticles-slim"; 
 
 const Main = () => {
-    const particlesInit = useCallback(async engine => {
-        console.log(engine);
+    const particlesInit = useCallback(async (engine) => {
         await loadSlim(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+    const particlesLoaded = useCallback((container) => {
+        console.log("Particles Loaded:", container);
     }, []);
-  return (
-    <div className='max-h-screen'>
-        <Particles
-    id="tsparticles"
-    init={particlesInit}
-    loaded={particlesLoaded}
-    options={{
+
+    const particlesOptions = useMemo(() => ({
         background: {
             color: {
-                value: "0ffffff",
+                value: "#ffffff", // Fixed invalid color
             },
         },
         fpsLimit: 120,
@@ -49,9 +41,7 @@ const Main = () => {
             },
         },
         particles: {
-            color: {
-                value: "#2abd19",
-            },
+            color: { value: "#2abd19" },
             links: {
                 color: "#2abd19",
                 distance: 150,
@@ -60,37 +50,27 @@ const Main = () => {
                 width: 1,
             },
             move: {
-                direction: "none",
                 enable: true,
-                outModes: {
-                    default: "bounce",
-                },
-                random: false,
                 speed: 4,
-                straight: false,
+                direction: "none",
+                outModes: { default: "bounce" },
             },
             number: {
-                density: {
-                    enable: true,
-                    area: 600,
-                },
+                density: { enable: true, area: 600 },
                 value: 80,
             },
-            opacity: {
-                value: 0.5,
-            },
-            shape: {
-                type: "circle",
-            },
-            size: {
-                value: { min: 1, max: 5 },
-            },
+            opacity: { value: 0.5 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 5 } },
         },
         detectRetina: true,
-    }}
-/>
-    </div>
-  )
-}
+    }), []);
 
-export default Main
+    return (
+        <div className="max-h-screen">
+            <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={particlesOptions} />
+        </div>
+    );
+};
+
+export default Main;
